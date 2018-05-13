@@ -40,7 +40,7 @@ def create_graph_from_file(file):
                     G.add_edge(actor, scnd)
     return G
 
-Graph=create_graph_from_file("casts2.csv")
+Graph=create_graph_from_file("casts.csv")
 
 print("General statistics")
 #e.g. number of nodes and edges, density, number of components
