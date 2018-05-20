@@ -156,12 +156,12 @@ for index, row in df.iterrows():
     row = [col + "=" + str(row[col]) for col in list(df)]
     dataset.append(row)
 
-frequentItemsets, supports = apriori(dataset, 0.3)
+frequentItemsets, supports = apriori(dataset, 0.05)
 
 for f in frequentItemsets:
     print("{} - {}".format(f, supports[f]))
 
-genereateRules(frequentItemsets, supports, 0.5)
+genereateRules(frequentItemsets, supports, 0.4)
 
 # ...
 # {'car=YES'} => married=YES, 0.3233333333333333, 0.6554054054054054
